@@ -4,7 +4,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Independence Day Tricolor Simulator", page_icon="🇮🇳", layout="centered")
 
-st.title("🇮🇳 Independence Day Digital Selfie & Greeting Simulator")
+st.title("🇮🇳 Independence Day Digital Selfie & Greeting ")
 st.write("Create your custom patriotic selfie card and celebrate Freedom Day in style!")
 
 # Sidebar Controls
