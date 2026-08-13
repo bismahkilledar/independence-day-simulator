@@ -2,9 +2,9 @@ import io
 from PIL import Image, ImageOps, ImageDraw, ImageFont
 import streamlit as st
 
-st.set_page_config(page_title="Independence Day Tricolor Simulator", page_icon="🇮🇳", layout="centered")
+st.set_page_config(page_title="Independence Day Tricolor Generator", page_icon="🇮🇳", layout="centered")
 
-st.title("🇮🇳 Independence Day Digital Selfie & Greeting ")
+st.title("🇮🇳 Independence Day Digital Selfie & Greeting Creator")
 st.write("Create your custom patriotic selfie card and celebrate Freedom Day in style!")
 
 # Sidebar Controls
@@ -47,7 +47,6 @@ if uploaded_file is not None:
     
     # Add text details
     try:
-        # Fallback to default font if custom font isn't available
         font_title = ImageFont.load_default()
         font_sub = ImageFont.load_default()
     except Exception:
@@ -60,7 +59,7 @@ if uploaded_file is not None:
     
     # Display the Result
     st.subheader("Your Independence Day Card Preview:")
-    st.image(card, use_column_width=True)
+    st.image(card, use_container_width=True)
     
     # Download Button
     buf = io.BytesIO()
@@ -74,5 +73,5 @@ if uploaded_file is not None:
         mime="image/jpeg"
     )
 else:
-    st.info("👆 Please upload a photo using the uploader above to generate your customized simulator card.")
-  
+    st.info("👆 Please upload a photo using the uploader above to generate your customized creator tool card.")
+    
